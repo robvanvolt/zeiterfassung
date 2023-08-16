@@ -30,7 +30,7 @@ Es kann dazu verwendet werden, jegliche Art von Fullstack-Anwendung (Frontend + 
 5. Ins projektverzeichnis wechseln
 
     ```bash
-    cd Zeiterfassung
+    cd zeiterfassung
     ```
 
 6. Visual studio code starten
