@@ -14,13 +14,19 @@ Dieses Projekt ist ein Beispielprojekt für die Verwendung von Deno mit einer Da
     deno install --allow-all --no-check -r -f https://deno.land/x/deploy/deployctl.ts
     ```
 
-3. Projekt klonen
+3. Deno deployctl Account erstellen
+
+Geh auf [https://dash.deno.com/account#access-tokens](deployctl) und erstelle einen Account.
+Nachdem ein Account erstellt wurde, kann der obige Link genutzt werdne, um einen Access-Token zu erstellen.
+Dieser Access-Token muss in der deno.json eingetragen werden unter tasks -> preview und tasks -> prod.
+
+4. Projekt klonen
 
     ```bash
-    git clone github...
+    git clone https://github.com/robvanvolt/zeiterfassung.git
     ```
 
-4. Ins projektverzeichnis wechseln
+5. Ins projektverzeichnis wechseln
 
     ```bash
     cd Zeiterfassung
