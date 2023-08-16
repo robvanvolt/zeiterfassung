@@ -47,15 +47,18 @@ Es kann dazu verwendet werden, jegliche Art von Fullstack-Anwendung (Frontend + 
 8. Datenbankverbindung eintragen
 
     In der .env Datei im Root-Directory die Datenbankverbindung eintragen:
-    -- HOST: Hostname der Datenbank
-    -- USERNAME: Benutzername der Datenbank
-    -- PASSWORD: Passwort des Benutzers
-    -- DATABASE: Name der Datenbank
-    -- PORT: Port der Datenbank
 
-    Die .env Datei wird nicht mit in das Repository übernommen, da sie sensible Daten enthält.
-    Die Variablen aus der .env Datei werden in der routes/api/db.ts Datei verwendet, um eine Verbindung
-    zur Datenbank aufzubauen.
+    | Schlüssel  | Beschreibung                       |
+    |------------|------------------------------------|
+    | HOST       | Hostname der Datenbank             |
+    | USERNAME   | Benutzername der Datenbank         |
+    | PASSWORD   | Passwort des Benutzers             |
+    | DATABASE   | Name der Datenbank                 |
+    | PORT       | Port der Datenbank                 |
+
+    **Anmerkung**: Die .env Datei mit den realen Datenbankvariablen wird nicht mit in das Repository übernommen,
+    da sie sensible Daten enthält. Die Variablen aus der .env Datei werden nämlich in der routes/api/db.ts Datei ausgelesen,
+    um eine Verbindung zu einer Datenbank (in diesem Beispiel MariaDB) aufzubauen.
 
 ## Nutzung
 
