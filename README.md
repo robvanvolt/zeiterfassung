@@ -3,8 +3,9 @@
 ## Beschreibung
 
 Dieses Projekt ist ein Beispielprojekt für die Verwendung von Deno mit einer Datenbankverbindung.
+Es kann dazu verwendet werden, jegliche Art von Fullstack-Anwendung (Frontend + Backend + Middleware) zu verwirklichen.
 
-## Setup
+## Vorbereitung
 
 1. Deno installieren: <https://deno.land/manual/getting_started/installation>
 
@@ -16,9 +17,9 @@ Dieses Projekt ist ein Beispielprojekt für die Verwendung von Deno mit einer Da
 
 3. Deno deployctl Account erstellen
 
-Geh auf [https://dash.deno.com/account#access-tokens](deployctl) und erstelle einen Account.
-Nachdem ein Account erstellt wurde, kann der obige Link genutzt werdne, um einen Access-Token zu erstellen.
-Dieser Access-Token muss in der deno.json eingetragen werden unter tasks -> preview und tasks -> prod.
+    Geh auf [https://dash.deno.com](deployctl) und erstelle einen Account.
+    Nachdem ein Account erstellt wurde, kann der obige Link genutzt werdne, um einen Access-Token zu erstellen.
+    Dieser Access-Token muss in der deno.json eingetragen werden unter tasks -> preview und tasks -> prod.
 
 4. Projekt klonen
 
@@ -32,7 +33,33 @@ Dieser Access-Token muss in der deno.json eingetragen werden unter tasks -> prev
     cd Zeiterfassung
     ```
 
+6. Visual studio code starten
+
+    ```bash
+    code .
+    ```
+
+7. Access-Token für das Deployment eintragen
+
+    Den access-token hier herholen [https://dash.deno.com/account#access-tokens](deployctl) und in
+    der deno.json Datei im Root-Directory unter tasks -> preview und tasks -> prod eintragen
+
+8. Datenbankverbindung eintragen
+
+    In der .env Datei im Root-Directory die Datenbankverbindung eintragen:
+    -- HOST: Hostname der Datenbank
+    -- USERNAME: Benutzername der Datenbank
+    -- PASSWORD: Passwort des Benutzers
+    -- DATABASE: Name der Datenbank
+    -- PORT: Port der Datenbank
+
+    Die .env Datei wird nicht mit in das Repository übernommen, da sie sensible Daten enthält.
+    Die Variablen aus der .env Datei werden in der routes/api/db.ts Datei verwendet, um eine Verbindung
+    zur Datenbank aufzubauen.
+
 ## Nutzung
+
+Sobald alles eingerichtet ist kann das Projekt mit folgenden Befehlen im Terminal gestartet / hochgeladen werden:
 
 ### Für die lokale Entwicklung
 

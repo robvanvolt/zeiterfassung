@@ -1,7 +1,6 @@
 # Diese Daten werden nicht mit in das Repository übernommen,
 # da sie sensibel sind und sich von Umgebung zu Umgebung unterscheiden können.
 # dotenv environment variable files
-.env
 .env.development.local
 .env.test.local
 .env.production.local
